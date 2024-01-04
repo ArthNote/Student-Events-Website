@@ -1,0 +1,150 @@
+<?php
+	// Calling the Connection file!
+
+	include("auth.php");
+    require "config.php";
+	
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="css/about.css" id="cssmode">
+    <title>About us</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/about.js" type="text/javascript"></script>
+</head>
+<body>
+    <section class="home" >
+        <nav>
+            <img src="imgs/sistlogo.png" alt="logo" class="logo" href="welcome.php">
+            <ul id="action">
+                <li><a href="welcome.php" >Home</a></li>
+                <li><a href="adminevents.php">Events</a></li>
+                <li><a href="adminabout.php">About Us</a></li>
+            </ul>
+                <a href="logout.php" class="btn" >Sign Out!</a>        
+            <button id="menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="content">
+            <div class="container-texts">
+                
+                <h4>Hello, I am</h4>
+                <h1>Moussaid <span>Yassine</span></h1>
+                <h3>I am a Full-stack<span> Developer</span></h3>
+                <p>I design and develop services for customers of all sizes,</p>
+                <p>specializing in creating stylish, modern websites, web services</p>
+                <p>and online stores.</p> 
+                <br>
+                <br>
+                <div class="social">
+                    <a href = "mailto: moussaidyassine@gmail.com" target="_blank"><img src="imgs/gmail.png" alt="icon" ></a>
+                    <a href="https://bit.ly/3WRumpo" target="_blank"><img src="imgs/ig.png" alt="icon"></a>
+                    <a href="https://bit.ly/3VAkhvG" target="_blank"><img src="imgs/ld.png" alt="icon"></a>
+                </div>
+                <br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="container-images">
+                <img src="imgs/me2.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="main-title">
+            <h3>WHAT I <span>DO?</span> </h3>
+        </div>
+        <div class="services-container">
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-outlined">
+                        laptop_windows
+                    </span>
+                    <h3>Web Dev</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-outlined">
+                        smartphone
+                    </span>
+                    <h3>Mobile Dev</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-outlined">
+                        database
+                    </span>
+                    <h3>Data Security</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-outlined">
+                        stadia_controller
+                    </span>
+                    <h3>Game Dev</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-outlined">
+                        view_in_ar
+                    </span>
+                    <h3>AR/VR Dev</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-outlined">
+                        design_services
+                    </span>
+                    <h3>Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container-image">
+            <img src="imgs/Online page-rafiki.png" alt="">
+        </div>
+        <div class="container-text">
+            <h1>About The<span> Website</span></h1>
+            <P>
+            This website is a platform for the SIST Student Union, where both normal users and administrators can access information about upcoming events. Normal users can view upcoming events, while administrators have the ability to log in, register, edit, delete, and add new events to the website. Overall, the website serves as a central hub for communication and organization within the student union.
+            </P>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content-footer">
+            <h2>Student <span>Union</span></h2>
+            <p>
+                Thanks for checking our website!!
+            </p>
+            <p class="end">
+                CopyRight By SIST British University
+            </p>
+        </div>
+    </footer> 
+
+    <div class="theme dark-mode" id="dark-mode" style="display: none;" onclick="golight()">
+        <span class="material-symbols-outlined"  onclick="golight()">dark_mode</span>
+    </div>
+
+    <div class="theme light-mode" id="light-mode" onclick="godark()" >
+        <span class="material-symbols-outlined" onclick="godark()">light_mode</span>
+    </div>
+</body>
+</html>
+
